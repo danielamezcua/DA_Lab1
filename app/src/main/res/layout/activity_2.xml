@@ -4,18 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Activity2">
 
-    <Button
-        android:id="@+id/virgin"
-        android:layout_width="213dp"
-        android:layout_height="78dp"
-        android:onClick="doggo"
-            android:text="PRESS HERE TO SEE THE FATTEST DOG EVER"
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="332dp"
+        android:layout_height="484dp"
+        android:contentDescription="Manchas"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/manchas" />
 </android.support.constraint.ConstraintLayout>
