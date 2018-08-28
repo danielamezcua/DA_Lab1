@@ -11,11 +11,79 @@
         android:layout_width="213dp"
         android:layout_height="78dp"
         android:onClick="doggo"
-            android:text="PRESS HERE TO SEE THE FATTEST DOG EVER"
+        android:text="PRESS HERE TO SEE THE FATTEST DOG EVER"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.219" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="207dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="43dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginLeft="89dp"
+        android:layout_marginRight="88dp"
+        android:layout_marginStart="89dp"
+        android:onClick="talk_to_doggo"
+        android:text="TALK TO THE DOGGO"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginBottom="71dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginLeft="87dp"
+        android:layout_marginRight="87dp"
+        android:layout_marginStart="87dp"
+        android:onClick="change_text"
+        android:text="CLICK HERE TO KNOW A FACT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="212dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="43dp"
+        android:layout_marginEnd="133dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginRight="133dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="28dp"
+        android:text="Hidden fact"
+        app:layout_constraintBottom_toTopOf="@+id/virgin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.352"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.48" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="336dp"
+        android:layout_height="78dp"
+        android:layout_marginBottom="26dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Type a message to the doggo..."
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/virgin" />
 
 </android.support.constraint.ConstraintLayout>

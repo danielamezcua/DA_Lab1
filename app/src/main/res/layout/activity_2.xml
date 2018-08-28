@@ -8,13 +8,23 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="332dp"
-        android:layout_height="484dp"
-        android:contentDescription="Manchas"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="284dp"
+        android:layout_height="411dp"
+        app:srcCompat="@drawable/estopas"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/varText"
+        android:layout_width="249dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="9dp"
+        android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/manchas" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 </android.support.constraint.ConstraintLayout>
