@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonVibrate"
+        android:layout_width="181dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="429dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginLeft="102dp"
+        android:layout_marginRight="101dp"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="26dp"
+        android:text="Vibrate Activity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonProximity"
+        android:layout_width="178dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="332dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginLeft="102dp"
+        android:layout_marginRight="104dp"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="44dp"
+        android:text="Proximity Sensor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonVibrate" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="176dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="238dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginLeft="102dp"
+        android:layout_marginRight="106dp"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="41dp"
+        android:text="Bar Notification"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonProximity" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="88dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginLeft="76dp"
+        android:layout_marginRight="75dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="131dp"
+        android:text="Daniel Amezcua Sánchez A01234223"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+</android.support.constraint.ConstraintLayout>
