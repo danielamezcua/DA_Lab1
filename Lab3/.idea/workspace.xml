@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc12b0b1-6448-4bd6-bd6c-b0dabc441c42" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="cc12b0b1-6448-4bd6-bd6c-b0dabc441c42" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -2042,7 +2040,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="9" />
     <option name="y" value="23" />
     <option name="width" value="1260" />
@@ -2262,7 +2260,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="9" y="23" width="1260" height="692" extended-state="0" />
+    <frame x="9" y="23" width="1260" height="692" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
