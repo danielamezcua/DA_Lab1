@@ -1,0 +1,13 @@
+<ion-view title="index" id="page1" style="">
+  <ion-content padding="true" class="has-header">
+    <h1 id="index-heading1" style="color:#000000;">Hey you</h1>
+    <h3 id="index-heading2" style="color:#000000;">Wanna know the weather for some city?</h3>
+    <h4 id="index-heading3" style="color:#000000;">Please fill the field below</h4>
+    <form id="index-form2" class="list">
+      <label class="item item-input" id="index-input3">
+        <input type="text" placeholder="i.e queretaro" ng-model="mdl.cityName">
+      </label>
+    </form>
+    <a ui-sref="stats({cityName: mdl.cityName})" id="index-button1" class="button button-calm button-block">Get weather stats</a>
+  </ion-content>
+</ion-view>
