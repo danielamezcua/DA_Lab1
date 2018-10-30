@@ -6,7 +6,6 @@ angular.module('app.controllers', [])
 function ($scope, $stateParams) {
 	$scope.mdl = {};
 	$scope.mdl.symbol = "";
-
 }])
    
 .controller('detailsCtrl', ['$scope', '$stateParams', '$http',// The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
@@ -15,6 +14,7 @@ function ($scope, $stateParams) {
 function ($scope, $stateParams, $http) {
 	$scope.mdl = {};
 	$scope.mdl.symbol = $stateParams.symbol;
+	console.log($stateParams.symbol);
 	$scope.mdl.currentStockPrice = "";
 	$scope.mdl.dateOfAnalysis = "";
 	$scope.mdl.trend = 0;
@@ -26,11 +26,11 @@ function ($scope, $stateParams, $http) {
 	//Make the request
 	$http.get(url).then(function successCallback(response){
 		console.log(url);
-		$scope.mdl.currentStockPrice = Number(response["Global Quote"]["05. price"]);
-		$scope.mdl.dateOfAnalysis = response["Global Quote"]["07. latest trading day"];
-		$scope.mdl.trend = $scope.mdl.currentStockPrice - Number(response["Global Quote"]["08. previous close"]);
-		$scope.recommendation = (($scope.mdl.trend > 0) ? 'Keep!' : 'Sell now!');
-		$scope.colorRecommendation = (($scope.mdl.trend > 0) ? '#3bc63d' : '#ED4C4C');
+		$scope.mdl.currentStockPrice = Number(response.data["Global Quote"]["05. price"]);
+		$scope.mdl.dateOfAnalysis = response.data["Global Quote"]["07. latest trading day"];
+		$scope.mdl.trend = $scope.mdl.currentStockPrice - Number(response.data["Global Quote"]["08. previous close"]);
+		$scope.mdl.recommendation = (($scope.mdl.trend > 0) ? 'Keep!' : 'Sell now!');
+		$scope.mdl.colorRecommendation = (($scope.mdl.trend > 0) ? '#3bc63d' : '#ED4C4C');
 	}, function errorCalback(response){
 		console.log(response);
 	});
